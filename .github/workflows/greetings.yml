@@ -17,9 +17,9 @@ jobs:
       # Make a change (e.g., update a timestamp)
       - name: Make a Commit
         run: |
-          echo "Commit made on $(date)" >> commit-log.txt
+          echo "Commit made on $(date)" >> commit-log-$(date +'%Y%m%d').txt
           git config --global user.name "YourGitHubUsername"
           git config --global user.email "your.email@example.com"
-          git add commit-log.txt
+          git add commit-log-$(date +'%Y%m%d').txt
           git commit -m "bash_shell Automated commit on $(date)"
           git push
