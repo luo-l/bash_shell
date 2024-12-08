@@ -3,7 +3,7 @@ name: Schedule Commits
 on:
   schedule:
     # Schedule this workflow to run daily at 00:00 UTC
-    - cron: '0 7 * * *'
+    - cron: '0 15 * * *'
 
 jobs:
   commit:
